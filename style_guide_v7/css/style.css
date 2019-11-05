@@ -448,29 +448,54 @@ a {
   }
 }
 
-/* line 21, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 22, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .default {
   background-color: #51ddfc;
 }
 
-/* line 25, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 24, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+.default:hover {
+  background-color: #9cecfd;
+}
+
+/* line 29, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .error {
   background-color: #e4757a;
 }
 
-/* line 29, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 31, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+.error:hover {
+  background-color: #f1b5b8;
+}
+
+/* line 36, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .info {
   background-color: #927bc1;
 }
 
-/* line 33, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 38, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+.info:hover {
+  background-color: #bdafd9;
+}
+
+/* line 43, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .success {
   background-color: #63cc82;
 }
 
-/* line 37, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 45, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+.success:hover {
+  background-color: #9ddfb0;
+}
+
+/* line 50, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .warning {
   background-color: #fd7856;
+}
+
+/* line 52, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 /* ============================================= */
