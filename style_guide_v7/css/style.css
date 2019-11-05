@@ -437,27 +437,38 @@ a {
   border-radius: 5px;
 }
 
-/* line 15, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+  /* line 15, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
+
+/* line 21, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .default {
   background-color: #51ddfc;
 }
 
-/* line 19, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 25, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .error {
   background-color: #e4757a;
 }
 
-/* line 23, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 29, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .info {
   background-color: #927bc1;
 }
 
-/* line 27, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 33, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .success {
   background-color: #63cc82;
 }
 
-/* line 31, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
+/* line 37, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_buttons.scss */
 .warning {
   background-color: #fd7856;
 }
@@ -498,14 +509,40 @@ a {
   padding: 0 10px;
 }
 
-/* line 9, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 15, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 23, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
 }
 
-/* line 15, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 23, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* line 32, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -514,67 +551,165 @@ a {
   border-radius: 5px;
 }
 
-/* line 23, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 32, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  /* line 43, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+}
+
+/* line 49, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-1 {
   background-color: #927bc1;
 }
 
-/* line 27, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 49, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-1 {
+    flex-basis: 8.33%;
+  }
+}
+
+/* line 56, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-2 {
   background-color: #fd7856;
 }
 
-/* line 31, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 56, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-2 {
+    flex-basis: 16.67%;
+  }
+}
+
+/* line 63, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-3 {
   background-color: #deb2ee;
 }
 
-/* line 35, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 63, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-3 {
+    flex-basis: 25%;
+  }
+}
+
+/* line 70, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-4 {
   background-color: #7ee6fd;
 }
 
-/* line 39, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 70, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-4 {
+    flex-basis: 33.33%;
+  }
+}
+
+/* line 77, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-5 {
   background-color: #88d9a0;
 }
 
-/* line 43, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 77, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-5 {
+    flex-basis: 41.67%;
+  }
+}
+
+/* line 84, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-6 {
   background-color: #4da2bb;
 }
 
-/* line 47, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 84, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-6 {
+    flex-basis: 50%;
+  }
+}
+
+/* line 91, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-7 {
   background-color: #ec9fa3;
 }
 
-/* line 51, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 91, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-7 {
+    flex-basis: 58.33%;
+  }
+}
+
+/* line 98, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-8 {
   background-color: #fd9f85;
 }
 
-/* line 55, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 98, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-8 {
+    flex-basis: 66.67%;
+  }
+}
+
+/* line 105, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-9 {
   background-color: #e4757a;
 }
 
-/* line 59, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 105, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-9 {
+    flex-basis: 75%;
+  }
+}
+
+/* line 112, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-10 {
   background-color: #63cc82;
 }
 
-/* line 63, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 112, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-10 {
+    flex-basis: 83.33%;
+  }
+}
+
+/* line 119, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-11 {
   background-color: #51ddfc;
 }
 
-/* line 67, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 119, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-11 {
+    flex-basis: 91.67%;
+  }
+}
+
+/* line 126, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .theme.col-12 {
   background-color: #80e8d1;
 }
 
-/* line 71, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+@media (min-width: 768px) {
+  /* line 126, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
+  .theme.col-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* line 133, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_grid.scss */
 .card {
   flex-basis: 100%;
 }
@@ -590,7 +725,16 @@ a {
   flex-direction: column;
 }
 
-/* line 12, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_navigation.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* line 16, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_navigation.scss */
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -600,115 +744,17 @@ a {
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 23, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_navigation.scss */
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
-}
-
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
 @media (min-width: 768px) {
-  /* line 6, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 13, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 19, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 23, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-  /* line 30, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  /* line 34, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-  /* line 38, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-  /* line 42, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-3 {
-    flex-basis: 25.00%;
-  }
-  /* line 46, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-  /* line 50, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-  /* line 54, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-6 {
-    flex-basis: 50.00%;
-  }
-  /* line 58, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-  /* line 62, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-  /* line 66, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-9 {
-    flex-basis: 75.00%;
-  }
-  /* line 70, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-  /* line 74, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-  /* line 78, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .col-12 {
-    flex-basis: 100%;
-  }
-  /* line 82, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 88, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
+  /* line 16, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_navigation.scss */
   .nav-link {
     flex-basis: 100px;
   }
-  /* line 92, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 96, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 100, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_mediaqueries.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
+}
+
+/* line 28, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_navigation.scss */
+.nav-link:hover {
+  color: #fff;
+  background-color: #58e1c1;
 }
 
 /* ============================================= */
@@ -740,6 +786,14 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../../../../../Users/markobezic/Desktop/Code/techdegree-project-4/style_guide_v7/scss/component/_images.scss */
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
